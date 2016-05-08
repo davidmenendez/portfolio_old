@@ -1,0 +1,30 @@
+.button{
+  background: transparent;
+  color: #fff;
+  padding: 15px 20px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  text-transform: capitalize;
+  transition: all ease 300ms;
+  font-weight: 300;
+  width: 100%;
+  display: block;
+  min-width: none;
+  margin: 0 0 15px 0;
+  &:hover{
+    background: $color--red-hover;
+    border-color: $color--red-hover;
+  }
+  &:first-child{
+    margin-right: 15px;
+  }
+  @include respond-to(sm){
+    width: auto;
+    display: inline-block;
+    min-width: 200px;
+    margin: 0;
+  }
+}
+.text-center{
+  text-align: center;
+}
