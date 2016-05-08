@@ -1,0 +1,22 @@
+$color--red: #F04D4A;
+$color--red-hover: #D64542;
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "sm" {
+    @media (min-width: 767px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "md" {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "lg" {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
