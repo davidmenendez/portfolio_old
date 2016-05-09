@@ -266,6 +266,12 @@ small {
 .portfolio .col {
   padding: 0; }
 
+.resume--entry {
+  border-bottom: 1px solid #eee;
+  margin-top: 15px; }
+  .resume--entry:last-child {
+    border: 0; }
+
 .clear:before,
 .clear:after {
   content: " ";
