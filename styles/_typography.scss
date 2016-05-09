@@ -26,7 +26,33 @@ a{
   text-decoration: none;
   color: $color--red;
   font-size: inherit;
+  transition: all ease 300ms;
+  &:hover{
+    color: $color--red-hover;
+  }
 }
 small{
+  display: block;
   font-size: 1em;
+}
+
+.fa{
+  color: inherit;
+}
+.fa--lg{
+  font-size: 5em;
+  margin-bottom: 15px;
+
+}
+
+.social{
+  margin-bottom: 15px;
+  .fa{
+    font-size: 2em;
+    margin: 0 15px 0 0;
+    display: inline-block;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
 }

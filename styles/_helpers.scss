@@ -1,3 +1,11 @@
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table;
+}
+.clear:after {
+  clear: both;
+}
 .button{
   background: transparent;
   color: #fff;
@@ -5,7 +13,6 @@
   border: 2px solid #fff;
   border-radius: 4px;
   text-transform: capitalize;
-  transition: all ease 300ms;
   font-weight: 300;
   width: 100%;
   display: block;
@@ -14,6 +21,7 @@
   &:hover{
     background: $color--red-hover;
     border-color: $color--red-hover;
+    color: #fff;
   }
   &:first-child{
     margin-right: 15px;
