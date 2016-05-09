@@ -260,6 +260,9 @@ small {
       .col--12 {
         width: 8.33333%; } }
 
+.portfolio .row {
+  margin: 0; }
+
 .portfolio .col {
   padding: 0; }
 
