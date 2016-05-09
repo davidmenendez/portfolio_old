@@ -4,7 +4,17 @@ block link
   -var selected="Portfolio"
 
 block content
+  -var portfolio = {"hadassah":"/portfolio/hadassah", "CHCOF":"/portfolio/colorad-childrens-hospital", "blackbaud":"/portfolio/blackbaud", "beacharacter":"/portfolio/be-a-character", "bridgwater":"/portfolio/bridgwater", "nhm":"/portfolio/national-hamburger-month", "zblog":"/portfolio/zimmerman-blog", "bikestreet":"/portfolio/bikestreet", "hottest halloween":"/portfolio/hottest-halloween"}
   include ./nav
   section.section
     .container
       h1 Portfolio
+      .portfolio
+        .row
+          each val, key in portfolio
+            .col.col--3.workpreview
+              a(href=val)
+                figure
+                  img(src="http://placehold.it/400x400")
+                  figcaption
+                    h3 #{key})
