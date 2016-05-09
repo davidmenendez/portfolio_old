@@ -5,8 +5,19 @@ block link
 
 block content
   include ../nav
-  .container
-    h1=title
-    p My role for this project was head front-end developer. There were four page designs delivered and needed to be created into three separate pages as well as template for additional pages that would be added into a CMS. Each page with two additional breakpoints for tablet and phone.
-    p This was a fairly straight forward build with the accompanying PSDs. All Markup and styling done by me as well as javascript. Because this is a CMS build, once all the HTML was completed it had to be gutted and put into the CMS for templating use.
-    a.button.button--black(href="colorado-childrens-hospital") Colorado Childrens Hospital
+  section.section
+    .container
+      h1=title
+      .row
+        .col.col--1
+          img(src="http://placehold.it/1000x300").img--banner
+      .row
+        .col.col--3
+          img(src="http://placehold.it/300x300")
+        .col.col--3
+          img(src="http://placehold.it/300x300")
+        .col.col--3
+          img(src="http://placehold.it/300x300")
+      p My role for this project was head front-end developer. There were four page designs delivered and needed to be created into three separate pages as well as template for additional pages that would be added into a CMS. Each page with two additional breakpoints for tablet and phone.
+      p This was a fairly straight forward build with the accompanying PSDs. All Markup and styling done by me as well as javascript. Because this is a CMS build, once all the HTML was completed it had to be gutted and put into the CMS for templating use.
+      a.button.button--black(href="colorado-childrens-hospital") Colorado Childrens Hospital
