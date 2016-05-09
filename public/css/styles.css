@@ -7,21 +7,24 @@ body {
   line-height: 1.4;
   font-size: 100%;
   font-family: 'Raleway', sans-serif;
-  color: #333; }
+  color: #333;
+  font-weight: 400; }
 
 img {
   display: block;
   max-width: 100%; }
 
 footer {
-  padding: 30px 0;
   background: #eee;
   border-top: 1px solid #e2e2e2; }
 
 nav {
   padding: 15px 0;
-  display: flex;
-  justify-content: flex-end; }
+  display: block; }
+  @media (min-width: 767px) {
+    nav {
+      display: flex;
+      justify-content: flex-end; } }
   nav h1 {
     font-size: 1em;
     font-weight: 400;
@@ -30,7 +33,10 @@ nav {
     line-height: 1.4; }
   nav ul {
     list-style: none;
-    display: flex; }
+    display: block; }
+    @media (min-width: 767px) {
+      nav ul {
+        display: flex; } }
   nav li {
     margin: 0 15px 0 0; }
     nav li:last-child {
@@ -65,7 +71,8 @@ a {
   text-decoration: none;
   color: #F04D4A;
   font-size: inherit;
-  transition: all ease 300ms; }
+  transition: all ease 300ms;
+  display: inline-block; }
   a:hover, a.link--active {
     color: #D64542; }
 
@@ -213,7 +220,11 @@ small {
   width: 100%;
   display: block;
   min-width: none;
-  margin: 0 0 15px 0; }
+  margin: 0 0 15px 0;
+  text-align: center; }
+  .button--black {
+    border-color: #333;
+    color: #333; }
   .button:hover {
     background: #D64542;
     border-color: #D64542;

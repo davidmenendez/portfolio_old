@@ -27,6 +27,7 @@ a{
   color: $color--red;
   font-size: inherit;
   transition: all ease 300ms;
+  display: inline-block;
   &:hover, &.link--active{
     color: $color--red-hover;
   }

@@ -18,6 +18,11 @@
   display: block;
   min-width: none;
   margin: 0 0 15px 0;
+  text-align: center;
+  &--black{
+    border-color: #333;
+    color: #333;
+  }
   &:hover{
     background: $color--red-hover;
     border-color: $color--red-hover;
