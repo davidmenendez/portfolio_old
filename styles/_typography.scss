@@ -38,11 +38,25 @@ small{
 
 .fa{
   color: inherit;
-}
-.fa--lg{
-  font-size: 5em;
-  margin-bottom: 15px;
-
+  &--lg{
+    font-size: 5em;
+    margin-bottom: 15px;
+  }
+  &--rounded{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto 15px auto;
+    background: $color--red;
+    color: #fff;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    transition: all ease 300ms;
+    &:hover{
+      background: $color--red-hover;
+    }
+  }
 }
 
 .social{
