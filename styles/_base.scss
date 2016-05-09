@@ -18,3 +18,29 @@ footer{
   background: #eee;
   border-top: 1px solid #e2e2e2;
 }
+
+nav{
+  padding: 15px 0;
+  display: flex;
+  justify-content: flex-end;
+  h1{
+    font-size: 1em;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0 auto 0 0;
+    line-height: 1.4;
+  }
+  ul{
+    list-style: none;
+    display: flex;
+  }
+  li{
+    margin: 0 15px 0 0;
+    &:last-child{
+      margin: 0;
+    }
+  }
+  a{
+    color: inherit;
+  }
+}

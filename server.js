@@ -11,6 +11,14 @@ app.get('/', function(req, res) {
     res.render('index', { title: 'David Menendez Portfolio' });
 });
 
+app.get('/portfolio', function(req, res) {
+    res.render('portfolio', { title: 'Portfolio' });
+});
+
+app.get('/about', function(req, res) {
+    res.render('about', { title: 'About' });
+});
+
 app.listen(8000, function () {
   console.log('App listening on port 8000!');
 });

@@ -1,0 +1,14 @@
+block link
+-var menu = {"Home":"/", "Portfolio":"/portfolio", "About":"/about", "Resume":"/about#resume"}
+
+header
+  .container
+    nav
+      h1 David Menendez / #{title}
+      ul
+        each val, key in menu
+          li
+            if selected === key
+              a.link--active(href=val)=key
+            else
+              a(href=val)=key
