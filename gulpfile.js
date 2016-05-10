@@ -2,10 +2,15 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var nodemon = require('gulp-nodemon');
 var browserSync = require('browser-sync').create();
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function () {
   return gulp.src('./styles/**/*.scss')
-  .pipe(sass().on('error', sass.logError))
+  .pipe(sass({outputStyle:'expanded'}).on('error', sass.logError))
+  .pipe(autoprefixer({
+    browsers: ['last 2 versions'],
+    cascade: false
+  }))
   .pipe(gulp.dest('./public/css'))
   .pipe(browserSync.stream());
 });
@@ -33,4 +38,5 @@ gulp.task('nodemon', function (cb) {
   });
 });
 
+gulp.task('build', ['sass']);
 gulp.task('default', ['watch']);
