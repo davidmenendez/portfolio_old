@@ -45,4 +45,18 @@
   &--banner{
     margin-bottom: 30px;
   }
+  &--thumbnail{
+    margin-bottom: 15px;
+  }
+}
+.social{
+  margin-bottom: 15px;
+  .fa{
+    font-size: 2em;
+    margin: 0 15px 0 0;
+    display: inline-block;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
 }
