@@ -4,7 +4,45 @@ block link
   -var selected="Portfolio"
 
 block content
-  -var portfolio = {"hadassah":"/portfolio/hadassah", "CHCOF":"/portfolio/colorado-childrens-hospital", "blackbaud":"/portfolio/blackbaud", "beacharacter":"/portfolio/be-a-character", "bridgewater":"/portfolio/bridgewater", "nhm":"/portfolio/national-hamburger-month", "zblog":"/portfolio/zimmerman-blog", "bikestreet":"/portfolio/bikestreet", "hottest halloween":"/portfolio/hottest-halloween"}
+  -
+    var portfolio = {
+      "hadassah": {
+        url: "/portfolio/hadassah",
+        alt: "hadassah"
+      }, 
+      "CHCOF": {
+        url: "/portfolio/colorado-childrens-hospital",
+        alt: "colorado childrens hospital"
+      }, 
+      "blackbaud": {
+        url: "/portfolio/blackbaud",
+        alt: "blackbaud"
+      }, 
+      "beacharacter": {
+        url: "/portfolio/be-a-character",
+        alt: "beacharacter"
+      }, 
+      "bridgewater": {
+        url: "/portfolio/bridgewater",
+        alt: "bridgewater"
+      }, 
+      "nhm": {
+        url: "/portfolio/national-hamburger-month",
+        alt: "national-hamburger-month"
+      }, 
+      "zblog": {
+        url: "/portfolio/zimmerman-blog",
+        alt: "zimmerman-blog"
+      }, 
+      "bikestreet": {
+        url: "/portfolio/bikestreet",
+        alt: "bikestreet"
+      }, 
+      "hottest halloween": {
+        url: "/portfolio/hottest-halloween",
+        alt: "hottest-halloween"
+      }
+    }
   include ./nav
   section.section
     .container
@@ -13,8 +51,8 @@ block content
         .row
           each val, key in portfolio
             .col.col--3.workpreview
-              a(href=val)
+              a(href=val.url)
                 figure
-                  img(src="http://placehold.it/400x400")
+                  img(src="http://placehold.it/400x400" alt=val.alt)
                   figcaption
-                    h3 #{key})
+                    h3 #{key}
