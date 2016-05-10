@@ -76,4 +76,13 @@ router.get('/portfolio/hottest-halloween', function(req, res, next) {
   });
 });
 
+//404
+router.get('*', function(req, res, next){
+  res.status(404);
+  res.render('404', {
+    title: '404',
+    description: '404'
+  });
+});
+
 module.exports = router;
