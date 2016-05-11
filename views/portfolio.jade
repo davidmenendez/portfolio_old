@@ -6,41 +6,32 @@ block link
 block content
   -
     var portfolio = {
-      "hadassah": {
+      "Hadassah": {
         url: "/portfolio/hadassah",
-        alt: "hadassah"
       }, 
-      "CHCOF": {
+      "Colorado Childrens Hospital": {
         url: "/portfolio/colorado-childrens-hospital",
-        alt: "colorado childrens hospital"
       }, 
-      "blackbaud": {
+      "Blackbaud": {
         url: "/portfolio/blackbaud",
-        alt: "blackbaud"
       }, 
-      "beacharacter": {
+      "Be-A-Character": {
         url: "/portfolio/be-a-character",
-        alt: "beacharacter"
       }, 
-      "bridgewater": {
+      "Bridgwater": {
         url: "/portfolio/bridgewater",
-        alt: "bridgewater"
       }, 
-      "nhm": {
+      "National Hamburger Month": {
         url: "/portfolio/national-hamburger-month",
-        alt: "national-hamburger-month"
       }, 
-      "zblog": {
+      "Zimmerman Blog": {
         url: "/portfolio/zimmerman-blog",
-        alt: "zimmerman-blog"
       }, 
-      "bikestreet": {
+      "Bikestreet USA": {
         url: "/portfolio/bikestreet",
-        alt: "bikestreet"
       }, 
-      "hottest halloween": {
+      "Hottest Halloween": {
         url: "/portfolio/hottest-halloween",
-        alt: "hottest-halloween"
       }
     }
   include ./nav
@@ -53,6 +44,6 @@ block content
             .col.col--3.workpreview
               a(href=val.url)
                 figure
-                  img(src="http://placehold.it/400x400" alt=val.alt)
+                  img(src="http://placehold.it/400x400" alt=val)
                   figcaption
                     h3 #{key}

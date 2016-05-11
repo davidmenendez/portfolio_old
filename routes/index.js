@@ -3,7 +3,7 @@ var router = express.Router();
 
 router.get('/', function(req, res, next) {
   res.render('index', {
-    title: 'David Menendez Portfolio',
+    title: 'Front-End Developer Portfolio',
     description: 'Portfolio for Austin based Front-End developer David Menendez. Experienced with HTML5, CSS3, & JavaScript'
   });
 });
@@ -59,13 +59,13 @@ router.get('/portfolio/national-hamburger-month', function(req, res, next) {
 });
 router.get('/portfolio/zimmerman-blog', function(req, res, next) {
   res.render('portfolio/zimmerman-blog', {
-    title: 'zBlog',
+    title: 'Zimmerman Blog',
     description: 'zBlog project by Zimmerman Advertising. Role- Lead web developer utalizing PHP, Wordpress, and CSS3'
   });
 });
 router.get('/portfolio/bikestreet', function(req, res, next) {
   res.render('portfolio/bikestreet', {
-    title: 'Bikestreet',
+    title: 'Bikestreet USA',
     description: 'Bikestreet USA project. Role- Front-End developer utalizing Kentico CMS, jQuery, responsive design, CSS3, and HTML5'
   });
 });
