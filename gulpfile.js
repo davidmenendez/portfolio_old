@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var nodemon = require('gulp-nodemon');
 var browserSync = require('browser-sync').create();
 var autoprefixer = require('gulp-autoprefixer');
+var jade = require('gulp-jade');
 
 gulp.task('sass', function () {
   return gulp.src('./styles/**/*.scss')
@@ -36,6 +37,15 @@ gulp.task('nodemon', function (cb) {
       started = true; 
     } 
   });
+});
+
+gulp.task('deploy', function(){
+  var directories = ['./public/css', './public/images', './public/scripts'];
+  gulp.src('./views/**/*.jade')
+  .pipe(jade({pretty: true}))
+  .pipe(gulp.dest('./deploy/'));
+  gulp.src(directories)
+  .pipe(gulp.dest('./deploy'));
 });
 
 gulp.task('build', ['sass']);
