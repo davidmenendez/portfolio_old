@@ -75,10 +75,15 @@
     margin: 0;
   }
 }
-.resume--entry{
-  border-bottom: 1px solid #eee;
-  margin-top: 15px;
-  &:last-child{
-    border: 0;
+.resume{
+  &--entry{
+    border-bottom: 1px solid #eee;
+    margin-top: 15px;
+    &:last-child{
+      border: 0;
+    }
+  }
+  &--header{
+    font-size: 2em;
   }
 }

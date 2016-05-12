@@ -3,14 +3,8 @@ h1, h2, h3{
   font-weight: 300;
   margin-bottom: 15px;
 }
-h1{
+h1, .h1{
   font-size: 3.5em;
-  &.jumbo{
-    font-size: 4em;
-    @include respond-to(sm){
-      font-size: 5em;
-    }
-  }
 }
 h2{
   font-size: 2em;
@@ -57,5 +51,12 @@ small{
     &:hover{
       background: $color--red-hover;
     }
+  }
+}
+
+&.jumbo{
+  font-size: 4em;
+  @include respond-to(sm){
+    font-size: 5em;
   }
 }
