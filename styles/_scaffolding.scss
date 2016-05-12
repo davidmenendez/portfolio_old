@@ -2,16 +2,16 @@
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 1em;
 }
 .section{
-  padding: 30px 0;
+  padding: 2em 0;
   &--fullpage{
     padding: 0;
     height: 100vh;
     display: flex;
     align-items: center;
-    background: url('../images/background.jpeg') center center no-repeat fixed;
+    background: url('../images/background.jpeg') center center no-repeat scroll;
     background-size: cover;
     color: #fff;
     &:before{
@@ -26,15 +26,18 @@
     .container{
       position: relative;
     }
+    @include respond-to(sm){
+      background: url('../images/background.jpeg') center center no-repeat fixed;
+    }
   }
 }
 
 .row{
-  margin: 0 -15px;
+  margin: 0 -1em;
 }
 
 .col{
-  padding: 0 15px;
+  padding: 0 1em;
   float: none;
   @for $i from 1 through 12 {
     &--#{$i} {

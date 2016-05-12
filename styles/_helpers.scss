@@ -1,22 +1,24 @@
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
+.clearfix{
+  &:before{
+    content: " ";
+    display: table;
+  }
+  &:after{
+    clear: both;
+    content: " ";
+    display: table;
+  }
 }
 .button{
   background: transparent;
   color: #fff;
-  padding: 15px 20px;
+  padding: 1em 1.5em;
   border: 1px solid #fff;
   border-radius: 4px;
   text-transform: capitalize;
   width: 100%;
   display: block;
-  min-width: none;
-  margin: 0 0 15px 0;
+  margin: 0 0 1em 0;
   text-align: center;
   &--black{
     border-color: #333;
@@ -36,7 +38,9 @@
 }
 .button--group{
   .button:first-child{
-    margin-right: 2em;
+    @include respond-to(sm){
+      margin-right: 2em;
+    }
   }
 }
 .text-center{
@@ -44,17 +48,17 @@
 }
 .img{
   &--banner{
-    margin-bottom: 30px;
+    margin-bottom: 2em;
   }
   &--thumbnail{
-    margin-bottom: 15px;
+    margin-bottom: 1em;
   }
 }
 .social{
-  margin-bottom: 15px;
+  margin-bottom: 1em;
   .fa{
     font-size: 2em;
-    margin: 0 15px 0 0;
+    margin: 0 1em 0 0;
     display: inline-block;
     &:last-child{
       margin-right: 0;
