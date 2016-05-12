@@ -45,14 +45,14 @@ block content
     }
   include ./nav
   section.section
-    .container
-      h1 Portfolio
+    .container.clearfix
+      h2 Portfolio
       .portfolio
-        .row
+        .row.clearfix
           each val, key in portfolio
             .col.col--3.workpreview
               a(href=val.url)
                 figure
                   img(src=val.img alt=val)
                   figcaption
-                    h3 #{key}
+                    p #{key}

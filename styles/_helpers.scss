@@ -1,9 +1,9 @@
-.clear:before,
-.clear:after {
+.clearfix:before,
+.clearfix:after {
   content: " ";
   display: table;
 }
-.clear:after {
+.clearfix:after {
   clear: both;
 }
 .button{
@@ -27,14 +27,16 @@
     border-color: $color--red-hover;
     color: #fff;
   }
-  &:first-child{
-    margin-right: 15px;
-  }
   @include respond-to(sm){
     width: auto;
     display: inline-block;
     min-width: 200px;
     margin: 0;
+  }
+}
+.button--group{
+  .button:first-child{
+    margin-right: 2em;
   }
 }
 .text-center{

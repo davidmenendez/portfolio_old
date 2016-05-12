@@ -1,4 +1,4 @@
-* {
+*, *:before, *:after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -9,7 +9,7 @@ body {
   font-size: 100%;
   font-family: 'Raleway', sans-serif;
   color: #333;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 img {
@@ -22,13 +22,31 @@ footer {
   border-top: 1px solid #e2e2e2;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   line-height: 1.1;
-  font-weight: 300;
+  font-weight: 200;
+  margin: 0 0 .5em 0;
+}
+
+h1 {
+  font-size: 5.378em;
+}
+
+h2 {
+  font-size: 3.842em;
+}
+
+h3 {
+  font-size: 2.744em;
+}
+
+h4 {
+  font-size: 1.96em;
 }
 
 p {
   font-size: 1em;
+  margin: 0 0 1em 0;
 }
 
 a {
@@ -57,10 +75,13 @@ small {
 }
 
 .fa--rounded {
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto 15px auto;
@@ -83,15 +104,6 @@ small {
   padding: 0 15px;
 }
 
-.container:before, .container :after {
-  content: " ";
-  display: table;
-}
-
-.container:after {
-  clear: both;
-}
-
 .section {
   padding: 30px 0;
 }
@@ -99,8 +111,10 @@ small {
 .section--fullpage {
   padding: 0;
   height: 100vh;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   background: url("../images/background.jpeg") center center no-repeat fixed;
@@ -124,15 +138,6 @@ small {
 
 .row {
   margin: 0 -15px;
-}
-
-.row:before, .row :after {
-  content: " ";
-  display: table;
-}
-
-.row:after {
-  clear: both;
 }
 
 .col {
@@ -237,8 +242,10 @@ nav {
 
 @media (min-width: 767px) {
   nav {
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
@@ -246,7 +253,7 @@ nav {
 
 nav h1 {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 300;
   display: inline-block;
   margin: 0 auto 0 0;
   line-height: 1.4;
@@ -259,6 +266,7 @@ nav ul {
 
 @media (min-width: 767px) {
   nav ul {
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -276,13 +284,13 @@ nav a {
   color: inherit;
 }
 
-.clear:before,
-.clear:after {
+.clearfix:before,
+.clearfix:after {
   content: " ";
   display: table;
 }
 
-.clear:after {
+.clearfix:after {
   clear: both;
 }
 
@@ -311,10 +319,6 @@ nav a {
   color: #fff;
 }
 
-.button:first-child {
-  margin-right: 15px;
-}
-
 @media (min-width: 767px) {
   .button {
     width: auto;
@@ -322,6 +326,10 @@ nav a {
     min-width: 200px;
     margin: 0;
   }
+}
+
+.button--group .button:first-child {
+  margin-right: 2em;
 }
 
 .text-center {
@@ -363,6 +371,7 @@ nav a {
   overflow: hidden;
   color: #fff;
   background: #F04D4A;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: all 300ms ease;
 }
@@ -373,17 +382,20 @@ nav a {
 }
 
 .workpreview figure:hover figcaption:before {
+  -webkit-transform: scale(1);
   transform: scale(1);
   transition: all 300ms ease;
 }
 
-.workpreview figure:hover h3 {
+.workpreview figure:hover p {
+  -webkit-transform: scale(1);
   transform: scale(1);
   transition: all 300ms ease;
 }
 
 .workpreview figure:hover img {
   opacity: .1;
+  -webkit-transform: scale(1);
   transform: scale(1);
   transition: all 300ms ease;
 }
@@ -398,8 +410,10 @@ nav a {
   opacity: 0;
   text-align: center;
   transition: all 300ms ease;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
 }
@@ -412,17 +426,20 @@ nav a {
   left: 30px;
   border: 1px solid #fff;
   content: '';
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
   transition: all 300ms ease;
 }
 
 .workpreview img {
+  -webkit-transform: scale(1.12);
   transform: scale(1.12);
   transition: all 300ms ease;
   width: 100%;
 }
 
-.workpreview h3 {
+.workpreview p {
+  -webkit-transform: scale(1.5);
   transform: scale(1.5);
   transition: all 300ms ease;
   margin: 0 auto;
