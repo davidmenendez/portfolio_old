@@ -1,25 +1,20 @@
 h1, h2, h3{
   line-height: 1.1;
   font-weight: 300;
-  margin-bottom: 15px;
 }
-h1, .h1{
-  font-size: 3.5em;
+h1{
 }
 h2{
-  font-size: 2em;
 }
 h3{
-  font-size: 1em;
 }
 p{
   font-size: 1em;
-  margin-bottom: 15px;
 }
 a{
   text-decoration: none;
   color: $color--red;
-  font-size: inherit;
+  font: inherit;
   transition: all ease 300ms;
   display: inline-block;
   &:hover, &.link--active{
@@ -28,7 +23,6 @@ a{
 }
 small{
   display: block;
-  font-size: 1em;
 }
 
 .fa{
@@ -55,8 +49,6 @@ small{
 }
 
 &.jumbo{
-  font-size: 4em;
   @include respond-to(sm){
-    font-size: 5em;
   }
 }
