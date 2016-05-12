@@ -18,10 +18,10 @@ gulp.task('sass', function () {
 
 gulp.task('watch', ['nodemon', 'sass'], function () {
   browserSync.init(null, {
-    proxy: "http://localhost:8000",
+    proxy: "http://localhost:3000",
     files: ["public/**/*.*"],
     browser: "google chrome",
-    port: 8001,
+    port: 3001,
   });
   gulp.watch('./styles/**/*.scss', ['sass']);
   gulp.watch('./views/**/*.jade').on('change', browserSync.reload);
@@ -30,7 +30,7 @@ gulp.task('watch', ['nodemon', 'sass'], function () {
 gulp.task('nodemon', function (cb) {
   var started = false;
   return nodemon({
-    script: 'server.js'
+    script: 'app.js'
   }).on('start', function () {
     if (!started) {
       cb();
