@@ -11,7 +11,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    background: url('../images/background.jpeg') center center no-repeat scroll;
+    background: url('../images/background.jpeg') center center no-repeat scroll cover;
     background-size: cover;
     color: #fff;
     &:before{
@@ -28,6 +28,7 @@
     }
     @include respond-to(sm){
       background: url('../images/background.jpeg') center center no-repeat fixed;
+      background-size: cover;
     }
   }
 }
