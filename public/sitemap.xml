@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://davidmenendez.net/</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://davidmenendez.net/files/david_menendez_resume.pdf</loc>
+  <lastmod>2016-05-13T19:17:51+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://davidmenendez.net/portfolio</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://davidmenendez.net/about</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://davidmenendez.net/portfolio/hadassah</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://davidmenendez.net/portfolio/colorado-childrens-hospital</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://davidmenendez.net/portfolio/blackbaud</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://davidmenendez.net/portfolio/be-a-character</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://davidmenendez.net/portfolio/bridgewater</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://davidmenendez.net/portfolio/national-hamburger-month</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://davidmenendez.net/portfolio/zimmerman-blog</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://davidmenendez.net/portfolio/bikestreet</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://davidmenendez.net/portfolio/hottest-halloween</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://davidmenendez.net/files/david_menendez_resume.docx</loc>
+  <lastmod>2016-05-13T19:17:51+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+</url>
+</urlset>

@@ -7,12 +7,19 @@ html(lang="en")
     link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet", type="text/css")
     link(href="https://fonts.googleapis.com/css?family=Raleway:200,300,400", rel="stylesheet", type="text/css")
     link(href="/css/styles.css", rel="stylesheet")
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-77698295-1', 'auto');
+      ga('send', 'pageview');
   body
     block content
     footer.text-center.section
       .container.clearfix
         .social
-          a(href="#" title="resume").fa.fa-file
+          a(href="files/david_menendez_resume.pdf" title="resume").fa.fa-file
           a(href="https://www.linkedin.com/in/davidamenendez" title="linkedin" target="_blank").fa.fa-linkedin
           a(href="https://github.com/davidmenendez" title="github" target="_blank").fa.fa-github
           a(href="mailto:david@davidmenendez.net" title="email").fa.fa-envelope
