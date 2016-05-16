@@ -6,7 +6,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var jade = require('gulp-jade');
 
 gulp.task('sass', function () {
-  return gulp.src('./styles/**/*.scss')
+  return gulp.src('./src/styles/**/*.scss')
   .pipe(sass({outputStyle:'compressed'}).on('error', sass.logError))
   .pipe(autoprefixer({
     browsers: ['last 2 versions'],
@@ -23,8 +23,8 @@ gulp.task('watch', ['nodemon', 'sass'], function () {
     browser: "google chrome",
     port: 3001,
   });
-  gulp.watch('./styles/**/*.scss', ['sass']);
-  gulp.watch('./views/**/*.jade').on('change', browserSync.reload);
+  gulp.watch('./src/styles/**/*.scss', ['sass']);
+  gulp.watch('./src/views/**/*.jade').on('change', browserSync.reload);
 });
 
 gulp.task('nodemon', function (cb) {

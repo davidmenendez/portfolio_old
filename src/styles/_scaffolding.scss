@@ -11,7 +11,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    background: url('../images/background.jpeg') center center no-repeat scroll;
+    background: url('../images/background.jpg') center center no-repeat scroll;
     background-size: cover;
     color: #fff;
     &:before{
@@ -27,7 +27,7 @@
       position: relative;
     }
     @include respond-to(sm){
-      background: url('../images/background.jpeg') center center no-repeat fixed;
+      background: url('../images/background.jpg') center center no-repeat fixed;
       background-size: cover;
     }
   }
