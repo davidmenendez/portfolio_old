@@ -5,28 +5,13 @@ h1, h2, h3, h4{
   margin: 0 0 .5em 0;
 }
 h1{
-  font-size: 3.842em;
-  @include respond-to(sm){
-    font-size: 5.378em;
-  }
+  font-size: 3.375em;
 }
 h2{
-  font-size: 2.744em;
-  @include respond-to(sm){
-    font-size: 3.842em;
-  }
+  font-size: 2.25em;
 }
 h3{
-  font-size: 1.96em;
-  @include respond-to(sm){
-    font-size: 2.744em;
-  }
-}
-h4{
-  font-size: 1.4em;
-  @include respond-to(sm){
-    font-size: 1.96em;
-  }
+  font-size: 1.5em;
 }
 p{
   font-size: 1em;
