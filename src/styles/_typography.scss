@@ -27,9 +27,11 @@ a{
     color: $color--red-hover;
   }
 }
-small{
-  display: block;
-  font-size: 1em;
+.small{
+  font-size: 1.125em;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  margin: 0 0 1em 0;
 }
 
 .fa{
