@@ -1,5 +1,5 @@
 nav{
-  padding: 1em 0;
+  padding: 1rem 0;
   display: block;
   @include respond-to(sm){
     display: flex;
@@ -7,7 +7,7 @@ nav{
   }
   h1{
     font-family: 'Raleway', sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
     display: inline-block;
     margin: 0 auto 0 0;
     line-height: 1.4;
@@ -20,7 +20,7 @@ nav{
     }
   }
   li{
-    margin: 0 1em 0 0;
+    margin: 0 1rem 0 0;
     &:last-child{
       margin: 0;
     }

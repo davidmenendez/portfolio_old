@@ -2,10 +2,10 @@
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 1rem;
 }
 .section{
-  padding: 2em 0;
+  padding: 5rem 0;
   &--fullpage{
     padding: 0;
     height: 100vh;
@@ -34,11 +34,11 @@
 }
 
 .row{
-  margin: 0 -1em;
+  margin: 0 -1rem;
 }
 
 .col{
-  padding: 0 1em;
+  padding: 0 1rem;
   float: none;
   @for $i from 1 through 12 {
     &--#{$i} {

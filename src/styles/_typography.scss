@@ -2,20 +2,20 @@ h1, h2, h3, h4{
   line-height: 1.1;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  margin: 0 0 .5em 0;
+  margin: 0 0 .5rem 0;
 }
 h1{
-  font-size: 3.375em;
+  font-size: 3.375rem;
 }
 h2{
-  font-size: 2.25em;
+  font-size: 2.25rem;
 }
 h3{
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 p{
-  font-size: 1em;
-  margin: 0 0 1em 0;
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
 }
 a{
   text-decoration: none;
@@ -28,22 +28,22 @@ a{
   }
 }
 .small{
-  font-size: 1.125em;
+  font-size: 1.125rem;
   font-family: 'Raleway', sans-serif;
   line-height: 1.5;
-  margin: 0 0 1em 0;
+  margin: 0 0 1rem 0;
 }
 
 .fa{
   color: inherit;
   &--lg{
-    font-size: 5em;
+    font-size: 5rem;
   }
   &--rounded{
     justify-content: center;
     align-items: center;
     display: flex;
-    margin: 0 auto .25em auto;
+    margin: 0 auto .25rem auto;
     background: $color--red;
     color: #fff;
     height: 120px;
