@@ -1,57 +1,43 @@
-h1, h2, h3, h4{
-  line-height: 1.1;
-  font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+h4 {
   font-weight: 400;
-  margin: 0 0 .5em 0;
-}
-h1{
-  font-size: 3.375em;
-}
-h2{
-  font-size: 2.25em;
-}
-h3{
-  font-size: 1.5em;
-}
-p{
-  font-size: 1em;
-  margin: 0 0 1em 0;
-}
-a{
-  text-decoration: none;
-  color: $color--red;
-  font: inherit;
-  transition: all ease 300ms;
-  display: inline-block;
-  &:hover, &.link--active{
-    color: $color--red-hover;
-  }
-}
-.small{
-  font-size: 1.125em;
-  font-family: 'Raleway', sans-serif;
-  line-height: 1.5;
-  margin: 0 0 1em 0;
+  line-height: 1.1;
+  margin-bottom: .5rem;
 }
 
-.fa{
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: $red;
+  transition: $transition;
+  &:hover {
+    color: $red--hover;
+  }
+}
+
+.skill-ico {
+  font-size: 5rem;
   color: inherit;
-  &--lg{
-    font-size: 5em;
-  }
-  &--rounded{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin: 0 auto .25em auto;
-    background: $color--red;
-    color: #fff;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    transition: all ease 300ms;
-    &:hover{
-      background: $color--red-hover;
-    }
-  }
+  margin-bottom: 1rem;
 }

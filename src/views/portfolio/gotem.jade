@@ -1,0 +1,26 @@
+extends ../layout
+
+block link
+  -var selected="Portfolio"
+
+block content
+  include ../nav
+  section
+    .container
+      h2=title
+      .row
+        .col
+          img(src="/images/work/gotem/gebanner.jpg" alt="be-a-character homepage").img--banner
+      .row
+        .col
+          img(src="/images/work/gotem/ge1.jpg" alt="be-a-character player")
+        .col
+          img(src="/images/work/gotem/ge3.jpg" alt="be-a-character lightbox")
+        .col
+          img(src="/images/work/gotem/ge4.jpg" alt="be-a-character instagram feed")
+      h3
+        a(href="http://got-em.mybluemix.net/" target="_blank") Project link
+      p GOTEM is a small app developed by me and some co-workers. GOTEM is what we describe as the shared soundboard. The idea is that you can start a room and once in the room you are given an array of sounds to choose from. You and everyone in the room will be able to hear the sounds that you've clicked on.
+      p GOTEM is a simple Node.js app that uses Socket.io for client/server communication and HTML5 audio APIs to play the sounds locally. On this project I worked on most of the UI and worked on some of the backend code including creating a lobby to view all active rooms and developing the rooms.
+      p Next Project:
+      a.button.portfolio-button(href="hadassah") Hadassah

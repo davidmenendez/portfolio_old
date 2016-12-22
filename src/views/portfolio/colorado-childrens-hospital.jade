@@ -5,20 +5,27 @@ block link
 
 block content
   include ../nav
-  section.section
-    .container.clearfix
+  section
+    .container
       h2=title
-      .row.clearfix
-        .col.col--1
+      .row
+        .col
           img(src="/images/work/chcf/banner.jpg" alt="colorado childrens hospital").img--banner
-      .row.clearfix
-        .col.col--3
-          img(src="/images/work/chcf/chcf3.jpg" alt="colorado childrens hospital homepage").img--thumbnail
-        .col.col--3
-          img(src="/images/work/chcf/courage1.jpg" alt="courage classic").img--thumbnail
-        .col.col--3
-          img(src="/images/work/chcf/tcc2.jpg" alt="team childrens colorado").img--thumbnail
+      .row
+        .col
+          img(src="/images/work/chcf/chcf3.jpg" alt="colorado childrens hospital homepage")
+        .col
+          img(src="/images/work/chcf/courage1.jpg" alt="courage classic")
+        .col
+          img(src="/images/work/chcf/tcc2.jpg" alt="team childrens colorado")
+      h3 Project Links
+      p 
+        a(href="http://www.childrenscoloradofoundation.org/" target="_blank") Childrens Colorado Foundation
+      p 
+        a(href="http://www.childrenscoloradofoundation.org/courage-classic/" target="_blank") Courage Classic
+      p 
+        a(href="http://www.childrenscoloradofoundation.org/team-childrens-colorado/" target="_blank") Team Childrens Colarado
       p This project in particular was a challenge due to harsh time constraints and expectations set forth by the client, but luckily was pulled off. This project would be three separate site designs, though they were very similar they each possessed their own unique challenges. My role was lead front-end developer for Team Children's Colorado, Courage Classic ,and Children's Hospital Colorado.
       p Because of the time constraints, the team and I decided that the best approach for the build would be to use a css framework to save time. We went with Bootstrap because I very familiar with it. I also used a few other jQuery plugins along with the bootstrap functionality for additional flair. The initial build took the longest to complete and each other build after was much quicker since it was mostly a few color changes.
       p Next Project:
-      a.button.button--black(href="blackbaud") Blackbaud
+      a.button.portfolio-button(href="blackbaud") Blackbaud

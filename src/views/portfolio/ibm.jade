@@ -1,0 +1,27 @@
+extends ../layout
+
+block link
+  -var selected="Portfolio"
+
+block content
+  include ../nav
+  section
+    .container
+      h2=title
+      .row
+        .col
+          img(src="/images/work/bluemix/bluemixbanner.jpg" alt="be-a-character homepage").img--banner
+      .row
+        .col
+          img(src="/images/work/bluemix/bm1.jpg" alt="be-a-character player")
+        .col
+          img(src="/images/work/bluemix/bm2.jpg" alt="be-a-character lightbox")
+        .col
+          img(src="/images/work/bluemix/bm3.jpg" alt="be-a-character instagram feed")
+      h3
+        a(href="https://console.ng.bluemix.net/" target="_blank") Project link
+      p I joined IBM in late 2015. For the past year I have been working on the Autoscale team in the IBM cloud division. My role was primarily front end developer and spent most of my time working on the Bluemix Autoscale UI.
+      p For this project I worked primarily with Node.js and React.js utilizing the latest Javascript technologies with Babel and ES6. Along with developing the UI components we also worked on RESTful APIs that communicate with the Autoscale backend.
+      p Additional duties involved working with Python and Angular.js code, developing unit and end to end tests, developing build tools, working with micro-services, and pipeline development.
+      p Next Project:
+      a.button.portfolio-button(href="gotem") GOTEM

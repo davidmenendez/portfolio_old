@@ -1,67 +1,66 @@
-.clearfix{
-  &:before{
-    content: " ";
-    display: table;
-  }
-  &:after{
-    clear: both;
-    content: " ";
-    display: table;
-  }
-}
-.button{
-  background: transparent;
+.button {
+  background: $red;
   color: #fff;
-  padding: 1em 1.5em;
-  border: 1px solid #fff;
-  border-radius: 4px;
-  text-transform: capitalize;
-  width: 100%;
+  border-radius: 5px;
   display: block;
-  margin: 0 0 1em 0;
+  transition: $transition;
   text-align: center;
-  &--black{
-    border-color: #333;
-    color: #333;
-  }
-  &:hover{
-    background: $color--red-hover;
-    border-color: $color--red-hover;
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+  &:hover {
     color: #fff;
+    background: $red--hover;
   }
-  @include respond-to(sm){
-    width: auto;
+  @include respond-to(sm) {
     display: inline-block;
-    min-width: 200px;
-    margin: 0;
+    padding: .75rem 1.5rem;
+    margin: 0 .5rem 0 0;
   }
 }
-.button--group{
-  .button:first-child{
-    @include respond-to(sm){
-      margin-right: 2em;
-    }
-  }
-}
-.text-center{
+
+.text-center {
   text-align: center;
 }
-.img{
-  &--banner{
-    margin-bottom: 2em;
+
+.resume-entry {
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  transition: $transition;
+  opacity: 0;
+  visibility: hidden;
+  &-active {
+    opacity: 1;
+    visibility: visible;
   }
-  &--thumbnail{
-    margin-bottom: 1em;
+  &-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  p {
+    color: #fff;
+    font-size: 5rem;
   }
 }
-.social{
-  margin-bottom: 1em;
-  .fa{
-    font-size: 2em;
-    margin: 0 1em 0 0;
-    display: inline-block;
-    &:last-child{
-      margin-right: 0;
+
+.social {
+  margin: 0 auto .5rem auto;
+  a {
+    color: #333;
+    padding: 0 .5rem;
+    font-size: 2rem;
+    &:hover {
+      color: $red--hover;
     }
   }
 }

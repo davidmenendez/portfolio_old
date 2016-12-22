@@ -1,31 +1,34 @@
-nav{
-  padding: 1em 0;
+nav {
   display: block;
-  @include respond-to(sm){
-    display: flex;
-    justify-content: flex-end;
-  }
-  h1{
-    font-family: 'Raleway', sans-serif;
-    font-size: 1em;
-    display: inline-block;
-    margin: 0 auto 0 0;
+  padding: 1rem 0;
+  h1 {
+    font-size: 1rem;
+    margin: 0;
     line-height: 1.4;
+    font-weight: 400;
   }
-  ul{
-    list-style: none;
-    display: block;
-    @include respond-to(sm){
-      display: flex;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  li {
+    padding: 0;
+  }
+  @include respond-to(sm) {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      justify-content: space-between;
+    }
+    li {
+      padding: 0 .5rem;
     }
   }
-  li{
-    margin: 0 1em 0 0;
-    &:last-child{
-      margin: 0;
-    }
-  }
-  a{
-    color: inherit;
-  }
+}
+
+.link--active {
+  padding-bottom: .25rem;
+  color: $red--hover;
+  border-bottom: 1px solid $red--hover;
 }
