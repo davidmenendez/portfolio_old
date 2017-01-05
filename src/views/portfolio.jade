@@ -5,54 +5,87 @@ block link
 
 block content
   -
-    var portfolio = {
-      "Hadassah": {
+    var portfolio = [
+    [
+      {
+        name: "2K12CR",
+        url: "/portfolio/2k12cr",
+        img: "/images/work/2k12cr/2k124.jpg"
+      }, 
+      {
+        name: "IBM",
+        url: "/portfolio/ibm",
+        img: "/images/work/bluemix/bm4.jpg"
+      }, 
+      {
+        name: "GOTEM",
+        url: "/portfolio/gotem",
+        img: "/images/work/gotem/ge2.jpg"
+      }
+    ],
+    [
+      {
+        name: "Hadassah",
         url: "/portfolio/hadassah",
         img: "/images/work/hadassah/hada1.jpg"
       }, 
-      "Colorado Childrens Hospital": {
+      {
+        name: "Colorado Childrens Hospital",
         url: "/portfolio/colorado-childrens-hospital",
         img: "/images/work/chcf/chcf.jpg"
       }, 
-      "Blackbaud": {
+      {
+        name: "Blackbaud",
         url: "/portfolio/blackbaud",
-        img: "/images/work/blackbaud/rfl.jpg"
-      }, 
-      "Be-A-Character": {
+        img: "/images/work/blackbaud/rfl2.jpg"
+      }
+    ],
+    [
+      {
+        name: "Be-A-Character",
         url: "/portfolio/be-a-character",
         img: "/images/work/beacharacter/be-a-character11.jpg"
       }, 
-      "Bridgwater": {
+      {
+        name: "Bridgwater",
         url: "/portfolio/bridgewater",
         img: "/images/work/lennar/lennar11.jpg"
       }, 
-      "National Hamburger Month": {
+      {
+        name: "National Hamburger Month",
         url: "/portfolio/national-hamburger-month",
         img: "/images/work/nhm/national-hamburger-month11.jpg"
-      }, 
-      "Zimmerman Blog": {
+      }
+    ],
+    [
+      {
+        name: "Zimmerman Blog",
         url: "/portfolio/zimmerman-blog",
         img: "/images/work/zblog/zna11.jpg"
       }, 
-      "Bikestreet USA": {
+      {
+        name: "Bikestreet USA",
         url: "/portfolio/bikestreet",
         img: "/images/work/bstreet/bikestreet11.jpg"
       }, 
-      "Hottest Halloween": {
+      {
+        name: "Hottest Halloween",
         url: "/portfolio/hottest-halloween",
         img: "/images/work/hottesthalloween/hottest-halloween11.jpg"
       }
-    }
+    ]
+    ]
   include ./nav
-  section.section
-    .container.clearfix
+  section
+    .container
       h2 Portfolio
       .portfolio
-        .row.clearfix
-          each val, key in portfolio
-            .col.col--3.workpreview
-              a(href=val.url)
-                figure
-                  img(src=val.img alt=val)
-                  figcaption
-                    p #{key}
+        each row in portfolio
+          .row
+            each entry in row
+              .col.portfolio-entry
+                a(href=entry.url)
+                  figure
+                    img(src=entry.img alt=entry.name)
+                    figcaption
+                      p #{entry.name}

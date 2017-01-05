@@ -1,26 +1,47 @@
-*, *:before, *:after{
+*, 
+*:before, 
+*:after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body{
-  line-height: 1.5;
+
+html {
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
-  color: #333;
+}
+
+body {
+  font-size: 1rem;
   font-weight: 400;
-  text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.4;
+  font-family: 'Lato', sans-serif;
 }
-img{
-  display: block;
+
+section {
+  color: #333;
+  padding: 3rem 0;
+}
+
+img {
   max-width: 100%;
+  display: block;
 }
-footer{
+
+ul {
+  list-style: none;
+}
+
+footer {
+  padding: 1.5rem 0;
   background: #eee;
-  border-top: 1px solid #e2e2e2;
+  text-align: center;
 }
-header{
-  padding-bottom: 1rem;
+
+.section--dark {
+  background: #333;
+  color: #fff;
+}
+
+.resume {
+  margin-top: 1rem;
 }

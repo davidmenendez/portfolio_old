@@ -24,6 +24,27 @@ router.get('/about', function(req, res, next) {
 });
 
 //Portfolio Entries
+router.get('/portfolio/ibm', function(req, res, next) {
+  res.render('portfolio/ibm', {
+    title: 'IBM',
+    description: 'Role of lead Front-End Web Developer using responsive design, jQuery, and CMS templating',
+    path: req.path
+  });
+});
+router.get('/portfolio/2k12cr', function(req, res, next) {
+  res.render('portfolio/2k12cr', {
+    title: '2K12CR',
+    description: 'Role of lead Front-End Web Developer using responsive design, jQuery, and CMS templating',
+    path: req.path
+  });
+});
+router.get('/portfolio/gotem', function(req, res, next) {
+  res.render('portfolio/gotem', {
+    title: 'GOTEM',
+    description: 'Role of lead Front-End Web Developer using responsive design, jQuery, and CMS templating',
+    path: req.path
+  });
+});
 router.get('/portfolio/hadassah', function(req, res, next) {
   res.render('portfolio/hadassah', {
     title: 'Hadassah',

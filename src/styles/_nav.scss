@@ -1,31 +1,42 @@
-nav{
-  padding: 1rem 0;
+nav {
   display: block;
-  @include respond-to(sm){
-    display: flex;
-    justify-content: flex-end;
-  }
-  h1{
-    font-family: 'Raleway', sans-serif;
+  padding: 1rem 0;
+  h1 {
     font-size: 1rem;
-    display: inline-block;
-    margin: 0 auto 0 0;
+    margin: 0;
     line-height: 1.4;
+    font-weight: 400;
   }
-  ul{
-    list-style: none;
-    display: block;
-    @include respond-to(sm){
-      display: flex;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  li {
+    padding: 0;
+  }
+  a {
+    border-bottom: 1px solid transparent;
+    padding-bottom: .25rem;
+    &:hover {
+      color: $red--hover;
+      border-color: $red--hover;
     }
   }
-  li{
-    margin: 0 1rem 0 0;
-    &:last-child{
-      margin: 0;
+  @include respond-to(sm) {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      margin-top: 0;
+      justify-content: space-between;
+    }
+    li {
+      padding: 0 .5rem;
     }
   }
-  a{
-    color: inherit;
-  }
+}
+
+.link--active {
+  color: $red--hover;
+  border-color: $red--hover;
 }

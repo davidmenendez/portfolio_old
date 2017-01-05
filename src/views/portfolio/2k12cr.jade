@@ -1,0 +1,26 @@
+extends ../layout
+
+block link
+  -var selected="Portfolio"
+
+block content
+  include ../nav
+  section
+    .container
+      h2=title
+      .row
+        .col
+          img(src="/images/work/2k12cr/2k12banner.jpg" alt="be-a-character homepage").img--banner
+      .row
+        .col
+          img(src="/images/work/2k12cr/2k121.jpg" alt="be-a-character player")
+        .col
+          img(src="/images/work/2k12cr/2k122.jpg" alt="be-a-character lightbox")
+        .col
+          img(src="/images/work/2k12cr/2k123.jpg" alt="be-a-character instagram feed")
+      h3
+        a(href="http://2k12cr.com" target="_blank") Project link
+      p 2K12CR.com is a website I developed in my spare time for my band. This project was mostly an opportunity for me to do some design work.
+      p The UI is a stanard responsive layout using vanilla HTML5 and CSS3 with some Youtube and Soundcloud integration thrown in. The project is fairly barebones and can be looked at like an exercise in getting back to basics. No build tools or anything special to develop. Just a single page with good old fashion responsive styling.
+      p Next Project:
+      a.button.portfolio-button(href="ibm") Bluemix

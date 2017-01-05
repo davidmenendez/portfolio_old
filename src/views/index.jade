@@ -1,58 +1,53 @@
 extends layout
 
 block content
-  section.section.section--fullpage.text-center
-    .container.clearfix
+  section.section--full
+    .container
       h1 David Menendez
-      h2.small 
-        | I'm a Front-End web developer, based out of Austin,
+      h2 Front-End Web Developer
         br
-        | that specializes in eye-appealing web experience.
-      .button--group
-        a(href="files/david_menendez_resume.pdf" target="blank").button download resume
-        a(href="portfolio").button view portfolio
-  section.section.text-center
-    .container.clearfix
-      header
-        h2 What I do
-      .row.clearfix
-        .col.col--3
-          i.fa.fa-html5.fa--lg.fa--rounded
-          h3 Front-End
-          p HTML5, CSS3, Responsive Design, JavaScript, React framework, & jQuery. Knowledge of Cross Browser Compatibility & SEO.
-        .col.col--3
-          i.fa.fa-code.fa--lg.fa--rounded
-          h3 Back-End
-          p Working knowledge of serverside coding with Node, PHP, & MySQL. Experienced with building RESTful APIs.
-        .col.col--3
-          i.fa.fa-code-fork.fa--lg.fa--rounded
-          h3 Tools
+        | Based in Austin, TX
+      a(href="files/david_menendez_resume.pdf" target="blank").button resume
+      a(href="portfolio").button portfolio
+  section.text-center
+    .container
+      h2 what i do
+      p As an experienced programmer and web developer I have skills to fit many different roles and projects.
+      .row
+        .col
+          .fa.fa-user.skill-ico
+          h4 Front End
+          p HTML5, CSS3, Responsive Design, JavaScript, React.js, & jQuery. Knowledge of Cross Browser Compatibility & SEO.
+        .col
+          .fa.fa-code.skill-ico
+          h4 Back End
+          p Working knowledge of serverside coding with Node.js, PHP, Python, & MySQL. Experienced with building RESTful APIs.
+        .col
+          .fa.fa-cog.skill-ico
+          h4 Tools
           p Git, Adobe Photoshop, & Content Management Systems. Build tools such as Gulp for more efficient delivery & coding.
-      p
-        a(href="about").button.button--black About
-  section.section.text-center
-    .container.clearfix
-      header
-        h2 Work
-        p During my web development career I've had clients ranging from Make-A-Wish Foundation, PartyCity, and IBM.
-        p Check out some of the work I've accomplished professionally.
-      .row.clearfix
-        .col.col--3.workpreview
-          a(href="/portfolio")
+      a(href="portfolio").button portfolio
+  section.text-center.section--dark
+    .container
+      h2 what i've done
+      p With over five years of professional web developer experience I've worked on many different projects for many different clients with work ranging from web apps, content management systems, and microservices.
+      .row
+        .col.portfolio-entry
+          a(href="portfolio")
             figure
-              img(src="/images/work/nhm/national-hamburger-month1.jpg" alt="national hamburger month")
+              img(src="images/work/2k12cr/2k122.jpg" alt="2k12CR")
               figcaption
-                p National Hamburger Month
-        .col.col--3.workpreview
-          a(href="/portfolio")
+                p 2K12CR
+        .col.portfolio-entry
+          a(href="portfolio")
             figure
-              img(src="/images/work/zblog/zna4.jpg" alt="zimmerman blog")
+              img(src="images/work/hadassah/hada3.jpg" alt="hadassah")
               figcaption
-                p Zimmerman Blog
-        .col.col--3.workpreview
-          a(href="/portfolio")
+                p hadassah
+        .col.portfolio-entry
+          a(href="portfolio")
             figure
-              img(src="/images/work/hadassah/hada1.jpg" alt="hadassah")
+              img(src="images/work/nhm/national-hamburger-month1.jpg" alt="nhm")
               figcaption
-                p Hadassah
-      a(href="portfolio").button.button--black View Portfolio
+                p NHM
+      a(href="portfolio").button portfolio
