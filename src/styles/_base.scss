@@ -19,6 +19,7 @@ body {
 
 section {
   color: #333;
+  background: #fff;
   padding: 3rem 0;
 }
 
@@ -33,12 +34,13 @@ ul {
 
 footer {
   padding: 1.5rem 0;
-  background: #eee;
+  background: #333;
+  color: #fff;
   text-align: center;
 }
 
-.section--dark {
-  background: #333;
+.section--red {
+  background: $red-lite;
   color: #fff;
 }
 

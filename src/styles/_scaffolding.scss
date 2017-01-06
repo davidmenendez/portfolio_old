@@ -21,11 +21,19 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 0 -1rem;
-  @include respond-to(sm) {
+  @include respond-to(xs) {
     flex-direction: row;
   }
 }
 
 .col {
   padding: 1rem;
+  &--scalable {
+    transition: $transition;
+    border-radius: 5px;
+    &:hover {
+      background: $red-dark;
+      transform: scale(1.1);
+    }
+  }
 }
